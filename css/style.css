@@ -136,15 +136,15 @@ body {
 
 @media screen and (max-width: 900px) {
     .contents .contents__clock {
-        font-size: 48px;
+        font-size: 44px;
     }
 
     #login-form input {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     #todo-form input {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     #greeting {
@@ -153,7 +153,15 @@ body {
         font-size: 28px;
     }
 
+    #todo-list li {
+        font-size: 16px;
+    }
+
     #quotes {
         margin-top: 60px;
+    }
+
+    #quotes span:first-child {
+        font-size: 18px;
     }
 }

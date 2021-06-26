@@ -15,4 +15,4 @@ console.log(chosenImage);
 body.style.backgroundImage = `url(img/${chosenImage})`;
 body.style.backgroundRepeat = "no-repeat";
 body.style.backgroundSize = "cover";
-body.style.backgroundPosition = "center";
+body.style.backgroundPosition = "center top";

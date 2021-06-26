@@ -17,27 +17,29 @@
         </div>
     </div>
 
-    <div class="contents">
-        <div class="contents__clock">
-            <h2 id="clock">00:00:00</h2>
+    <div class="flex-box">
+        <div class="contents">
+            <div class="contents__clock">
+                <h2 id="clock">00:00:00</h2>
+            </div>
+            <div class="contents__LogIn">
+                <form class="hidden contents__LogIn-form" id="login-form">
+                    <input class="contents__LogIn-input " type="text" placeholder="이름을 알려주세요" maxlength="15" required>
+                </form>
+                <h1 id="greeting" class="hidden"></h1>
+            </div>
         </div>
-        <div class="contents__LogIn">
-            <form class="hidden contents__LogIn-form" id="login-form">
-                <input class="contents__LogIn-input " type="text" placeholder="이름을 알려주세요" maxlength="15" required>
-            </form>
-            <h1 id="greeting" class="hidden"></h1>
+
+        <form id="todo-form">
+            <input type="text" placeholder="할 일을 적어주세요">
+        </form>
+
+        <ul id="todo-list"></ul>
+
+        <div id="quotes">
+            <span></span>
+            <span></span>
         </div>
-    </div>
-
-    <form id="todo-form">
-        <input type="text" placeholder="할 일을 적어주세요">
-    </form>
-
-    <ul id="todo-list"></ul>
-
-    <div id="quotes">
-        <span></span>
-        <span></span>
     </div>
 
     <script src="./js/greetings.js"></script>

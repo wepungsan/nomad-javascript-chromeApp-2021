@@ -4,6 +4,7 @@ body {
     padding: 0px 10vw;
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
 
 .hidden {
@@ -21,15 +22,20 @@ body {
     font-size: 20px;
     color: white;
     opacity: 0.8;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 200px;
+    margin-top: 20px;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contents {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 180px;
 }
 
 .contents .contents__clock {
@@ -66,13 +72,12 @@ body {
 #greeting {
     color: white;
     opacity: 0.8;
-    font-size: 48px;
+    font-size: 36px;
 }
 
 #todo-form {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 }
 
 #todo-form input {
@@ -100,20 +105,35 @@ body {
     flex-direction: column;
     align-items: flex-end;
     padding-left: 0px;
-    margin-top: 40px;
+    margin: 20px 0px;
 }
 
 #todo-list li {
+    display: flex;
+    align-items: center;
     list-style: none;
     color: white;
     opacity: 0.8;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 5px;
+    padding: 5px;
 }
 
 #todo-list li button {
-    margin-left: 10px
+    margin-left: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    padding: 5px 9px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0);
+    transition: border 0.5s ease-in-out;
+}
+
+#todo-list li button:hover {
+    border-color: rgba(255, 255, 255, 0.8);
 }
 
 #quotes {
@@ -122,7 +142,6 @@ body {
     text-align: center;
     color: white;
     opacity: 0.8;
-    margin-top: 180px;
 }
 
 #quotes span:first-child {

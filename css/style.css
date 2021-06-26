@@ -48,7 +48,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     padding: 10px;
     margin: 10px;
-    font-size: 48px;
+    font-size: 36px;
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
     border-bottom: 3px solid rgba(255, 255, 255, 0.8);
@@ -63,21 +63,16 @@ body {
     outline: none;
 }
 
-.contents__LogIn-form .contents__LogIn-button {
-    margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-}
-
 #greeting {
     color: white;
     opacity: 0.8;
-    font-size: 60px;
+    font-size: 48px;
 }
 
 #todo-form {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 #todo-form input {
@@ -127,6 +122,7 @@ body {
     text-align: center;
     color: white;
     opacity: 0.8;
+    margin-top: 180px;
 }
 
 #quotes span:first-child {
@@ -158,7 +154,7 @@ body {
     }
 
     #quotes {
-        margin-top: 60px;
+        margin-top: 120px;
     }
 
     #quotes span:first-child {
